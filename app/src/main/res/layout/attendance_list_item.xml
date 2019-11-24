@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/oval"
+        android:text="J"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:id="@+id/attendanceOval"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_toRightOf="@id/attendanceOval"
+        android:layout_marginLeft="10dp"
+        android:text="Subject"
+        android:id="@+id/attendanceSubject"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/attendanceOval"
+        android:layout_marginLeft="10dp"
+        android:text="Semester"
+        android:layout_below="@id/attendanceSubject"
+        android:id="@+id/attendanceSemester"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_toRightOf="@id/attendanceOval"
+        android:layout_marginLeft="10dp"
+        android:text="Branch"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/attendanceSemester"
+        android:id="@+id/attendanceBranch"/>
+
+
+</RelativeLayout>

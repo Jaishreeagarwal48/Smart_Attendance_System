@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#10731d">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/branchSpinnerSubject"
+        >
+
+    </Spinner>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/Semester"
+        android:id="@+id/semesterSpinnerSubject"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/branchSpinnerSubject"></Spinner>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Subject"
+        android:layout_below="@id/semesterSpinnerSubject"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:inputType="textCapWords"
+        android:background="@drawable/text_back"
+        android:layout_marginTop="10dp"
+        android:id="@+id/subjectEditText"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/subjectEditText"
+        android:text="Add Subject"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/addSubjectBtn"
+        />
+</RelativeLayout>

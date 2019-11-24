@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF5722</color>
+    <color name="colorPrimaryDark">#D84315</color>
+    <color name="colorAccent">#FF9800</color>
+    <color name="backPress">#97e4e2e0</color>
+    <color name="backrel">#00000000</color>
+    <color name="btnpress">#050664</color>
+    <color name="btnrel">#24369c</color>
+    <color name="textpress">#17f2a934</color>
+    <color name="textrel">#f2a934</color>
+    <color name="hint">#d5000000</color>
+<color name="text">#2b0507</color>
+</resources>

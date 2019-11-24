@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="7dp"
+    android:background="@drawable/text_back">
+
+    <FrameLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/frameLayout">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/teachers"
+            android:id="@+id/circleImageView"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/teacherImageView"
+            android:background="@drawable/oval"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:text="H"
+            />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/frameLayout"
+        android:text="name"
+        android:textSize="18sp"
+        android:id="@+id/teacherName"
+        android:layout_toLeftOf="@+id/teacherUpdate"
+        android:layout_marginLeft="8dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/frameLayout"
+        android:layout_below="@id/teacherName"
+        android:textSize="18sp"
+        android:text="Mobile"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/teacherMobile"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/frameLayout"
+        android:layout_below="@id/teacherMobile"
+        android:text="Subject"
+        android:textSize="18sp"
+        android:id="@+id/teacherSubject"
+        android:layout_marginLeft="8dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete_black_24dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/teacherDelete"
+        android:layout_marginLeft="8dp"/>
+    <!--<ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_create_black_24dp"
+        android:layout_toLeftOf="@id/teacherDelete"
+        android:id="@+id/teacherUpdate"
+        android:layout_marginLeft="8dp"/>-->
+</RelativeLayout>

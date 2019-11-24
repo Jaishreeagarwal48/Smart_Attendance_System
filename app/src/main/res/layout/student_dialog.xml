@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Name"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:id="@+id/studentDialogName"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Mobile"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:id="@+id/studentDialogMobile"
+        android:layout_below="@id/studentDialogName"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Email"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:id="@+id/studentDialogEmail"
+        android:layout_below="@id/studentDialogMobile"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Branch"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:id="@+id/studentDialogBranch"
+        android:layout_below="@id/studentDialogEmail"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:text="Semester"
+        android:id="@+id/studentDialogSemester"
+        android:layout_below="@id/studentDialogBranch"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Parent Name"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:id="@+id/studentDialogPName"
+        android:layout_below="@id/studentDialogSemester"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:text="Parent Mobile"
+        android:id="@+id/studentDialogPMobile"
+        android:layout_below="@id/studentDialogPName"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:text="Parent Email"
+        android:id="@+id/studentDialogPEmail"
+        android:layout_below="@id/studentDialogPMobile"/>
+
+
+</RelativeLayout>

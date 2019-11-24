@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/addBranch"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Add Branch" />
+        <item
+            android:id="@+id/addNews"
+            android:icon="@drawable/news"
+            android:title="Add News" />
+
+        <item
+            android:id="@+id/addStudent"
+            android:icon="@drawable/ic_group_add_black_24dp"
+            android:title="Add Student" />
+        <item
+            android:id="@+id/addTeacher"
+            android:icon="@drawable/ic_person_add_black_24dp"
+            android:title="Add Teacher" />
+
+        <item
+            android:id="@+id/viewSubject"
+            android:icon="@drawable/books"
+            android:title="Subjects List" />
+            <item
+                android:id="@+id/viewReport"
+                android:icon="@drawable/ic_folder_shared_black_24dp"
+                android:title="View Report" />
+        <item
+            android:title="View Student Details"
+            android:id="@+id/viewStudentDetails"
+            android:icon="@drawable/ic_group_black_24dp"/>
+
+        <item
+            android:title="View Teacher Details"
+            android:id="@+id/viewTeacherDetails"
+            android:icon="@drawable/ic_person_black_24dp"/>
+
+</group>
+</menu>

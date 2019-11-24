@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A89F68"
+    android:padding="10dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search Teacher"
+        android:id="@+id/teacherSearch"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="5dp"
+        android:background="@drawable/text_back"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listViewTeacher"
+        android:layout_below="@id/teacherSearch">
+
+    </ListView>
+
+</RelativeLayout>

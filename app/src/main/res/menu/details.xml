@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/adminChangePassword"
+        android:title="Change Password"
+        app:showAsAction="never" />
+    <item
+        android:title="Edit Profile"
+        app:showAsAction="never"
+        android:id="@+id/adminEditProfile"
+        />
+    <item
+        android:title="Remove Profile Pic"
+        app:showAsAction="never"
+        android:id="@+id/adminRemovePic"/>
+    <item
+        android:title="Logout"
+        app:showAsAction="never"
+        android:id="@+id/adminLogout"/>
+
+</menu>

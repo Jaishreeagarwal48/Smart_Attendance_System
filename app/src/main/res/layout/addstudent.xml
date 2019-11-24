@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#e5595775">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Student"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:id="@+id/buttonAddStudent"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentBottom="true"
+        />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@id/buttonAddStudent"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords"
+        android:textSize="18sp"
+        android:hint="Student Name"
+        android:background="@drawable/text_back"
+        android:paddingLeft="8dp"
+        android:id="@+id/editTextSName"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="18sp"
+        android:hint="Student Mobile"
+        android:background="@drawable/text_back"
+        android:paddingLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/editTextSName"
+        android:id="@+id/ediTextSMobile"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/Branch"
+        android:id="@+id/spinnerBranchStudent"
+        android:layout_below="@id/ediTextSMobile"
+        android:layout_marginTop="16dp"
+        />
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/Semester"
+        android:layout_below="@id/spinnerBranchStudent"
+        android:id="@+id/spinnerSemesterStudent"
+        android:layout_marginTop="16dp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:textSize="18sp"
+        android:hint="Student Email"
+        android:id="@+id/editTextSEmail"
+        android:background="@drawable/text_back"
+        android:paddingLeft="8dp"
+        android:layout_below="@id/spinnerSemesterStudent"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords"
+        android:textSize="18sp"
+        android:hint="Parent's Name"
+        android:background="@drawable/text_back"
+        android:paddingLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ediTextSParentName"
+        android:layout_below="@id/editTextSEmail"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="18sp"
+        android:hint="Parent's Mobile"
+        android:id="@+id/editTextSParentMobile"
+        android:background="@drawable/text_back"
+        android:paddingLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/ediTextSParentName"/>
+ <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:textSize="18sp"
+        android:hint="Parent's Email"
+        android:id="@+id/editTextSParentEmail"
+        android:background="@drawable/text_back"
+        android:paddingLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/editTextSParentMobile"/>
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

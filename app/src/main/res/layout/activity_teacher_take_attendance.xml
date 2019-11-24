@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_teacher_take_attendance"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+   android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    tools:context="com.example.jaishree.attendance.Teacher.TeacherTakeAttendance">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBoxPresent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Present"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxAbsent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Absent"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxLeave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Leave"
+            android:textSize="18sp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <ListView
+        android:id="@+id/listViewAttendance"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cardView"
+        android:layout_marginTop="5dp">
+
+    </ListView>
+
+</RelativeLayout>

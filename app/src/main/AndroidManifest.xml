@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jaishree.attendance">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".Splash"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".admin.AdminLoginPage"
+            android:label="@string/title_activity_admin_login_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Teacher.TeacherLogin"
+            android:label="@string/title_activity_teacher_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".admin.Details"
+            android:label="@string/title_activity_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Student.StudentLogin"
+            android:label="@string/title_activity_student_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Parent.ParentLogin"
+            android:label="@string/title_activity_parent_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".admin.AdminEditProfile" />
+        <activity android:name=".admin.ChangePassword" />
+        <activity android:name=".admin.Otp" />
+        <activity
+            android:name=".Teacher.TeacherPanel"
+            android:label="@string/title_activity_teacher_panel"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Student.StudentPanel"
+            android:label="@string/title_activity_student_panel"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Parent.ParentPanel"
+            android:label="@string/title_activity_parent_panel"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Teacher.TeacherTakeAttendance" />
+        <activity android:name=".Teacher.TeacherOtp" />
+        <activity android:name=".Teacher.TeacherChangePassword" />
+        <activity android:name=".Student.StudentOtp" />
+        <activity android:name=".Student.StudentChangePassword" />
+        <activity android:name=".Parent.ParentOtp" />
+        <activity android:name=".Parent.ParentChangePassword" />
+        <activity android:name=".admin.ViewStudentAttendance" />
+        <activity android:name=".Parent.ParentSubjectAttendance" />
+        <activity android:name=".Teacher.TeacherEditProfile" />
+        <activity android:name=".Student.StudentEditProfile" />
+        <activity android:name=".admin.AdminForgetPassword" />
+        <activity android:name=".admin.AdminChangeForgetPassword" />
+        <activity android:name=".Teacher.TeacherOtpForgetPassword" />
+        <activity android:name=".Teacher.TeacherChangeForgetPassword" />
+        <activity android:name=".Student.StudentOtpForgetPassword" />
+        <activity android:name=".Student.StudentChangeForgetPassword" />
+        <activity android:name=".Parent.ParentChangeForgetPassword" />
+        <activity android:name=".Parent.ParentOtpForgetPassword" />
+        <activity android:name=".StudentSubjectAttendance"></activity>
+    </application>
+
+</manifest>

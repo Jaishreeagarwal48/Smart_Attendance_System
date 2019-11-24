@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:weightSum="4.4"
+    android:orientation="vertical">
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:autoStart="true"
+        android:flipInterval="2000"
+        android:id="@+id/viewFlipper">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/attendance"
+         />
+        <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/slid"
+         />
+        <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/slide"
+         />
+        <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/slider"
+         />
+
+    </ViewFlipper>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.3"
+                android:src="@drawable/admins"
+                android:padding="5dp"
+                android:id="@+id/imageAdmin"/>
+            <com.example.jaishree.attendance.MyFontAwesome
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:text="Admin"
+                android:textSize="20sp"
+                android:textColor="#e00b0b0b"
+                android:gravity="center"
+                android:id="@+id/textViewAdmin"
+                />
+
+        </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector"
+                android:id="@+id/viewAdmin"
+                android:clickable="true"/>
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7dp"
+            android:background="#12000000"/>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.3"
+                android:src="@drawable/teachers"
+                android:padding="5dp"
+                android:id="@+id/imageTeacher"/>
+            <com.example.jaishree.attendance.MyFontAwesome
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:text="Teacher"
+                android:textSize="20sp"
+                android:textColor="#e00b0b0b"
+                android:gravity="center"
+                android:id="@+id/textViewTeacher"
+                />
+
+        </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector"
+                android:id="@+id/viewTeacher"
+                android:clickable="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#12000000"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.3"
+                android:src="@drawable/st"
+                android:padding="5dp"
+                android:id="@+id/imageStudent"/>
+            <com.example.jaishree.attendance.MyFontAwesome
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:text="Student"
+                android:textSize="20sp"
+                android:textColor="#e00b0b0b"
+                android:gravity="center"
+                android:id="@+id/textViewStudent"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector"
+            android:id="@+id/viewStudent"
+            android:clickable="true"/>
+
+    </RelativeLayout>
+
+
+    <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#12000000"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.3"
+                android:src="@drawable/parent"
+                android:padding="5dp"
+                android:id="@+id/imageParent"/>
+            <com.example.jaishree.attendance.MyFontAwesome
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:text="Parent"
+                android:textSize="20sp"
+                android:textColor="#e00b0b0b"
+                android:gravity="center"
+                android:id="@+id/textViewParent"
+                />
+
+        </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector"
+                android:id="@+id/viewParent"
+                android:clickable="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="click"
+        app:showAsAction="always"
+        android:id="@+id/attendanceFilter"
+        android:icon="@drawable/filter"
+        android:orderInCategory="2"/>
+
+    <item
+        android:title="message"
+        app:showAsAction="always"
+        android:id="@+id/attendanceMessage"
+        android:icon="@drawable/ic_message_black_24dp"/>
+</menu>

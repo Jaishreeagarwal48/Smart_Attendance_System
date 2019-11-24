@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="7dp"
+    android:layout_margin="5dp">
+
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/frame">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/studentCircleImage"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/oval"
+            android:textSize="30sp"
+            android:text="J"
+            android:gravity="center"
+            android:id="@+id/studentTextView"
+            />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/frame"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"
+        android:padding="3dp"
+        android:text="Name"
+        android:id="@+id/attendanceStudentName"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/frame"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"
+        android:padding="3dp"
+        android:text="Mobile"
+        android:layout_below="@id/attendanceStudentName"
+        android:id="@+id/attendanceStudentMobile"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/attendanceRadioGroup"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:layout_below="@id/attendanceStudentMobile">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="P"
+            android:id="@+id/radioButtonPresent"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="A"
+            android:id="@+id/radioButtonAbsent" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="L"
+            android:id="@+id/radioButtonLeave"/>
+    </RadioGroup>
+
+</RelativeLayout>

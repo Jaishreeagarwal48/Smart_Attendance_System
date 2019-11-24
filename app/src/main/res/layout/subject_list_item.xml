@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="7dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/text_back">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subject name"
+        android:textSize="18sp"
+        android:layout_toLeftOf="@+id/subjectDelete"
+        android:id="@+id/subjectTextView"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Semester"
+        android:textSize="18sp"
+        android:layout_below="@id/subjectTextView"
+        android:id="@+id/semesterTextView"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Branch"
+        android:textSize="18sp"
+        android:layout_below="@id/semesterTextView"
+        android:id="@+id/branchTextView"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete_black_24dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/subjectDelete"/>
+<!--    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_create_black_24dp"
+        android:layout_toLeftOf="@id/subjectDelete"
+        android:id="@+id/subjectUpdate"
+        android:layout_marginRight="10dp"/>-->
+
+</RelativeLayout>
